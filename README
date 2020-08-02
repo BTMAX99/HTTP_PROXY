@@ -1,11 +1,13 @@
 ================================================================
 
-    README file for - HTTP Proxy
+    README file for HTTP Proxy
  
 ================================================================
 
 DESCRIBE YOUR CODE HERE AND DESIGN DECISIONS YOU MADE:
 It is group project(two mwmbers) .CS17B044 and I (CS17B102) had done this.
+
+-> Code for proxy is implemented in proxy.c
 -> We implemented HTTP proxy which mediates between client and server .
 -> Proxy takes request from client parses it and sends it to server and then recieves server reply and sends it to client.
 -> We have used socket programming for doing this .
@@ -15,7 +17,8 @@ It is group project(two mwmbers) .CS17B044 and I (CS17B102) had done this.
 -> For mainting concurrency we used fork and we implemented every request in child .
    Mainly we get errors while parsing, we handled them by BAD REQUEST error or NOT IMPLEMENTED error, 
    also there are many cases where we get errors such as creating,listening,bind,connect,recv for sockets and also during forking which are handled by us.
-
+   
+   
 INSTRUCTIONS TO RUN :
 
 * Go to the folder : 
