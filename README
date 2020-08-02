@@ -5,11 +5,11 @@
 ================================================================
 
 DESCRIBE YOUR CODE HERE AND DESIGN DECISIONS YOU MADE:
-
--> I implemented HTTP proxy which mediates between client and server .
+It is group project(two mwmbers) .CS17B044 and I (CS17B102) had done this.
+-> We implemented HTTP proxy which mediates between client and server .
 -> Proxy takes request from client parses it and sends it to server and then recieves server reply and sends it to client.
--> I have used socket programming for doing this .
--> I have created a client socket and every request from client socket is sent to function named "opfunction" 
+-> We have used socket programming for doing this .
+-> We have created a client socket and every request from client socket is sent to function named "opfunction" 
    which handles request from client and then each request gets parsed and is converted to a form accepted by a server 
    and then we store the reply from server and write it to client socket again.
 -> For mainting concurrency we used fork and we implemented every request in child .
