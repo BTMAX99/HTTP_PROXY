@@ -1,19 +1,24 @@
 ================================================================
 
     README file for Assignment 1 - HTTP Proxy
-
-           Name: V.Vamshi , B.Tarun
- Username/Login: CS17B044 , CS17B102
  
 ================================================================
 
 DESCRIBE YOUR CODE HERE AND DESIGN DECISIONS YOU MADE:
 
-We implemented HTTP proxy which mediates between client and server .Proxy takes request from client parses it and sends it to server and then recieves server reply and sends it to client.We have used socket programming for doing this .We created a client socket and every request from client socket is sent to function named "opfunction" which handles request from client and then each request gets parsed and is converted to a form accepted by a server and then we store the reply from server and write it to client socket again.For mainting concurrency we used fork and we implemented every request in child .Mainly we get errors while parsing, we handled them by BAD REQUEST error or NOT IMPLEMENTED error, also there are many cases where we get errors such as creating,listening,bind,connect,recv for sockets and also during forking which are handled by us.
+-> I implemented HTTP proxy which mediates between client and server .
+-> Proxy takes request from client parses it and sends it to server and then recieves server reply and sends it to client.
+-> I have used socket programming for doing this .
+-> I have created a client socket and every request from client socket is sent to function named "opfunction" 
+   which handles request from client and then each request gets parsed and is converted to a form accepted by a server 
+   and then we store the reply from server and write it to client socket again.
+-> For mainting concurrency we used fork and we implemented every request in child .
+   Mainly we get errors while parsing, we handled them by BAD REQUEST error or NOT IMPLEMENTED error, 
+   also there are many cases where we get errors such as creating,listening,bind,connect,recv for sockets and also during forking which are handled by us.
 
 INSTRUCTIONS TO RUN :
 
-* Go to the folder ASSIGNMENT3_CS17B102_CS17B044 :
+* Go to the folder : 
 	->  use make command //so that ./proxy is ready
 	->  run the command ./proxy <port_number>
 	->  open the new terminal in same directory and type the command telnet localhost <port_number>
