@@ -5,7 +5,7 @@
 ================================================================
 
 DESCRIBE YOUR CODE HERE AND DESIGN DECISIONS YOU MADE:
-It is group project(two mwmbers) .CS17B044 and I (CS17B102) had done this.
+It is group project(two mwmbers) . I (CS17B102) and my calssmate (cs17b044) had done this.
 
 -> Code for proxy is implemented in proxy.c
 -> We implemented HTTP proxy which mediates between client and server .
